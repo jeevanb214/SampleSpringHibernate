@@ -33,7 +33,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="com.jeevan.Model" />
+		<property name="packagesToScan" value="com.jeevan.model" />
 		<property name="hibernateProperties">
 			<props>
 				
@@ -65,13 +65,13 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
     
-<!--     
-<bean id="studentService" class="com.srikanth.Service.Impl.StudentServiceImpl">    
+     
+<bean id="studentService" class="com.jeevan.service.StudentServiceimpl">    
 </bean>
 
-<bean id="StudentDao" class="com.srikanth.Dao.Impl.StudentDaoImpl">    
+<bean id="studentDao" class="com.jeevan.dao.StudentDaoImpl">    
 </bean>  
-
+<!--
 <bean id="laptopService" class="com.srikanth.Service.Impl.LaptopServiceImpl">    
 </bean>
 
